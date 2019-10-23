@@ -61,6 +61,7 @@
                                         <size key="customSize" width="182" height="250"/>
                                         <connections>
                                             <outlet property="posterView" destination="esE-4q-LGu" id="8HS-mW-jDd"/>
+                                            <segue destination="sH4-DI-cET" kind="show" id="uYu-af-4d6"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -249,4 +250,7 @@
         <image name="now_playing_tabbar_item" width="21" height="21"/>
         <image name="superhero_tabbar_item" width="21" height="23"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="uYu-af-4d6"/>
+    </inferredMetricsTieBreakers>
 </document>
