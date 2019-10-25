@@ -40,5 +40,15 @@ class MovieDetailsViewController: UIViewController {
         posterView.af_setImage(withURL: posterUrl!)
         backdropView.af_setImage(withURL: backdropUrl!)
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // Pass the selected movie to the detials view controller
+        let trailerVC = segue.destination as! MovieTrailerViewController
+        trailerVC.movie = movie
+    }
+    
+    @IBAction func tapPoster(_ sender: Any) {
+    }
+    
 }
