@@ -11,6 +11,8 @@ import WebKit
 
 class MovieTrailerViewController: UIViewController, WKUIDelegate {
 
+    //MARK: - Properties
+    
     var movie: [String:Any]!
     var trailers: [[String:Any]]!
     @IBOutlet var webView: WKWebView!
@@ -59,16 +61,4 @@ class MovieTrailerViewController: UIViewController, WKUIDelegate {
         webView.uiDelegate = self
         view = webView
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

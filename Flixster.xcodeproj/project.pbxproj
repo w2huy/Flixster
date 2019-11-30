@@ -146,11 +146,11 @@
 				A555DBE02352B47A00F05886 /* MoviesViewController.swift */,
 				A5209247235F6B7B00D3431C /* MovieGridCell.swift */,
 				A5237F23235A426A00FE9146 /* MovieGridViewController.swift */,
+				A520924B23635ABE00D3431C /* MovieTrailerViewController.swift */,
 				A555DBB62352AFC500F05886 /* Main.storyboard */,
 				A555DBB92352AFC600F05886 /* Assets.xcassets */,
 				A555DBBB2352AFC600F05886 /* LaunchScreen.storyboard */,
 				A555DBBE2352AFC600F05886 /* Info.plist */,
-				A520924B23635ABE00D3431C /* MovieTrailerViewController.swift */,
 			);
 			path = Flixster;
 			sourceTree = "<group>";
