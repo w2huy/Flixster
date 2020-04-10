@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lC9-2v-qzo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lC9-2v-qzo">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -184,24 +184,24 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                                 <gestureRecognizers/>
                             </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dgR-SF-bcX">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dgR-SF-bcX">
                                 <rect key="frame" x="76" y="120" width="223" height="330"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="330" id="WSt-uG-rxE"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="hfP-Gg-lAF" appends="YES" id="xJt-9n-iKM"/>
                                 </connections>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGH-vG-fP3">
-                                <rect key="frame" x="16" y="474" width="343" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGH-vG-fP3">
+                                <rect key="frame" x="16" y="474" width="343" height="33.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKC-uZ-coo">
-                                <rect key="frame" x="16" y="536" width="343" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKC-uZ-coo">
+                                <rect key="frame" x="16" y="515.5" width="343" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -209,10 +209,19 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="SW0-KP-MJQ" firstAttribute="trailing" secondItem="ZGH-vG-fP3" secondAttribute="trailing" constant="16" id="1d7-48-gJj"/>
+                            <constraint firstItem="dgR-SF-bcX" firstAttribute="centerX" secondItem="JeQ-W6-8iV" secondAttribute="centerX" id="2Qb-Jp-OG7"/>
+                            <constraint firstItem="dgR-SF-bcX" firstAttribute="top" secondItem="SW0-KP-MJQ" secondAttribute="top" constant="76" id="6Gv-Vc-sTB"/>
                             <constraint firstItem="1Q0-H6-2C4" firstAttribute="trailing" secondItem="SW0-KP-MJQ" secondAttribute="trailing" id="DtH-uu-HVS"/>
+                            <constraint firstItem="SW0-KP-MJQ" firstAttribute="trailing" secondItem="SKC-uZ-coo" secondAttribute="trailing" constant="16" id="EH8-wv-D2w"/>
                             <constraint firstItem="1Q0-H6-2C4" firstAttribute="top" secondItem="SW0-KP-MJQ" secondAttribute="top" id="JBO-Aq-6gg"/>
+                            <constraint firstItem="dgR-SF-bcX" firstAttribute="leading" secondItem="SW0-KP-MJQ" secondAttribute="leading" constant="76" id="RPK-cr-JKL"/>
                             <constraint firstItem="1Q0-H6-2C4" firstAttribute="bottom" secondItem="SW0-KP-MJQ" secondAttribute="bottom" id="XJC-o4-ffN"/>
+                            <constraint firstItem="ZGH-vG-fP3" firstAttribute="leading" secondItem="SW0-KP-MJQ" secondAttribute="leading" constant="16" id="ZTk-8u-nTx"/>
+                            <constraint firstItem="SKC-uZ-coo" firstAttribute="leading" secondItem="SW0-KP-MJQ" secondAttribute="leading" constant="16" id="f7v-Io-Kev"/>
                             <constraint firstItem="1Q0-H6-2C4" firstAttribute="leading" secondItem="SW0-KP-MJQ" secondAttribute="leading" id="fqW-Lp-6w9"/>
+                            <constraint firstItem="SKC-uZ-coo" firstAttribute="top" secondItem="ZGH-vG-fP3" secondAttribute="bottom" constant="8" id="jQv-2d-YX3"/>
+                            <constraint firstItem="ZGH-vG-fP3" firstAttribute="top" secondItem="dgR-SF-bcX" secondAttribute="bottom" constant="24" id="pB2-vS-ZDE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SW0-KP-MJQ"/>
                     </view>
@@ -303,11 +312,11 @@
             <point key="canvasLocation" x="162.40000000000001" y="-747.07646176911555"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ldS-Vc-YUf"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="now_playing_tabbar_item" width="21" height="21"/>
         <image name="superhero_tabbar_item" width="21" height="23"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="ldS-Vc-YUf"/>
-    </inferredMetricsTieBreakers>
 </document>
